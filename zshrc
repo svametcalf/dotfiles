@@ -88,5 +88,5 @@ export VISUAL="emacsclient -c -n -a emacs"
 
 alias ec="emacsclient -c -n -a emacs"
 alias e="emacsclient -t"
-alias semacs="sudo emacscient -t"
+alias semacs="sudo emacsclient -t --alternate-editor=emacs"
 export TERM=xterm-256color
