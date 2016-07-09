@@ -12,15 +12,18 @@ of installation.
 
    ```cd zsh-5.2/```
 
-   ```./Util/preconfig```
+   ```"./Util/preconfig"```
 
    ```make```
 
    ```sudo make install```
 
-   ```zsh --version
+   ```
+   zsh --version
    -> 5.2
    ```
+
+   ```which zsh | sudo tee -a /etc/shells```
 
    ```sudo chsh -s "$(which zsh)" "${USER}"```
 
