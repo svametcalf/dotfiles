@@ -93,7 +93,9 @@ export TERM=xterm-256color
 
 alias docker-cloud="docker run -it -v ~/.docker:/root/.docker:ro -v $(pwd):/${PWD##*/}/ -w /${PWD##*/}/ --rm dockercloud/cli"
 
-alias docker-clean='docker rm $(docker ps -a -q) && docker rmi $(docker images -q) && docker ps -a | cut -c-12 | xargs docker rm'
+alias docker-clean="docker rmi $(docker images | grep "^<none>" | awk "{print $3}")"
+
+alias docker-agro-clean='docker rm $(docker ps -a -q) && docker rmi $(docker images -q) && docker ps -a | cut -c-12 | xargs docker rm'
 
 export NVM_DIR="/home/schuyler/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
