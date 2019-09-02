@@ -9,6 +9,3 @@
     ~/.zshrc: zshrc
     ~/.emacs.d: prelude/
     ~/.asdf: asdf/
-
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]
