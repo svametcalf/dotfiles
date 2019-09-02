@@ -49,8 +49,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby docker docker-compose ember-cli python 
-virtualenvmode sudo)
+plugins=(git rails ruby docker docker-compose ember-cli python sudo asdf)
 
 # User configuration
 
@@ -103,3 +102,7 @@ export NVM_DIR="/home/schuyler/.nvm"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/bin/"
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /home/schuyler/code/stockr/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/schuyler/code/stockr/node_modules/tabtab/.completions/electron-forge.zsh
