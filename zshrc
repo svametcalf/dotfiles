@@ -49,7 +49,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby docker docker-compose ember-cli python sudo asdf)
+plugins=(git rails ruby docker docker-compose ember-cli python sudo asdf mix)
 
 # User configuration
 
@@ -88,6 +88,7 @@ export VISUAL="emacsclient -c -n -a emacs"
 
 alias ec="emacsclient -c -n -a emacs"
 alias e="emacsclient -t"
+alias E="SUDO_EDITOR=\"emacsclient -t -a emacs\" sudoedit"
 alias semacs="sudo emacsclient -t --alternate-editor=emacs"
 export TERM=xterm-256color
 
