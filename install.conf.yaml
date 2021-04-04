@@ -9,3 +9,4 @@
     ~/.zshrc: zshrc
     ~/.emacs.d: prelude/
     ~/.asdf: asdf/
+    ~/.oh-my-zsh/themes/dracula.zsh-theme: dracula/dracula.zsh-theme
