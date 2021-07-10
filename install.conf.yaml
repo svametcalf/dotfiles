@@ -17,5 +17,6 @@
     ~/.zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh: zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
     ~/.oh-my-zsh/themes/dracula.zsh-theme: dracula/dracula.zsh-theme
     ~/.config/i3/config: i3-config
+    ~/.config/kitty/kitty.conf: kitty.conf
     ~/.config/kitty/dracula.conf: dracula-kitty/dracula.conf
     ~/.config/kitty/diff.conf: dracula-kitty/diff.conf
