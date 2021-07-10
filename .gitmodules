@@ -13,3 +13,6 @@
 [submodule "dracula"]
 	path = dracula
 	url = git@github.com:dracula/zsh
+[submodule "dracula-kitty"]
+	path = dracula-kitty
+	url = git@github.com:dracula/kitty

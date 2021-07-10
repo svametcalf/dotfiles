@@ -6,6 +6,8 @@
 
 - shell:
     - [mkdir -p ~/.zsh/custom/plugins/zsh-autosuggestions, Creating zsh custom dir]
+    - [mkdir -p ~/.config/i3, Creating i3 conf dir]
+    - [mkdir -p ~/.config/kitty/, Creating kitty conf dir ]
 - link:
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
@@ -14,3 +16,6 @@
     ~/.zsh/custom/zsh-autosuggestions.zsh: zsh-autosuggestions/zsh-autosuggestions.zsh
     ~/.zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh: zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
     ~/.oh-my-zsh/themes/dracula.zsh-theme: dracula/dracula.zsh-theme
+    ~/.config/i3/config: i3-config
+    ~/.config/kitty/dracula.conf: dracula-kitty/dracula.conf
+    ~/.config/kitty/diff.conf: dracula-kitty/diff.conf
