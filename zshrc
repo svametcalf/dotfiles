@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/schuyler/.oh-my-zsh
+export ZSH=/home/schuyler/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -43,17 +43,15 @@ ZSH_THEME="ys"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/.zsh/custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby docker docker-compose ember-cli python sudo asdf mix)
+plugins=(git rails ruby docker docker-compose ember-cli python sudo asdf mix fzf)
 
 # User configuration
-
-  export PATH="/home/schuyler/.rvm/gems/ruby-2.2.1/bin:/home/schuyler/.rvm/gems/ruby-2.2.1@global/bin:/home/schuyler/.rvm/rubies/ruby-2.2.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/schuyler/.rvm/bin:/home/schuyler/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -98,17 +96,4 @@ alias docker-clean="docker rmi $(docker images | grep "^<none>" | awk "{print $3
 
 alias docker-agro-clean='docker rm $(docker ps -a -q) && docker rmi $(docker images -q) && docker ps -a | cut -c-12 | xargs docker rm'
 
-export NVM_DIR="/home/schuyler/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/bin/"
-
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /home/schuyler/code/stockr/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /home/schuyler/code/stockr/node_modules/tabtab/.completions/electron-forge.zsh
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/schuyler/google-cloud-sdk/path.zsh.inc' ]; then . '/home/schuyler/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/schuyler/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/schuyler/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="$PATH:$HOME/bin/:$HOME/.local/bin"
