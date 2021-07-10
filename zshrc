@@ -97,3 +97,8 @@ alias docker-clean="docker rmi $(docker images | grep "^<none>" | awk "{print $3
 alias docker-agro-clean='docker rm $(docker ps -a -q) && docker rmi $(docker images -q) && docker ps -a | cut -c-12 | xargs docker rm'
 
 export PATH="$PATH:$HOME/bin/:$HOME/.local/bin"
+
+function cmdef(){
+    local dir=${1:-.}
+    for f in "$dir"/*.(ex|exs); echo $fg[green] "$f:      " $fg_bold[yellow] $(head -n 1 $f)$reset_color
+}
