@@ -11,3 +11,4 @@
     ~/.asdf: asdf/
     ~/.zsh/custom/zsh-autosuggestions.zsh: zsh-autosuggestions/zsh-autosuggestions.zsh
     ~/.zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh: zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+    ~/.oh-my-zsh/themes/dracula.zsh-theme: dracula/dracula.zsh-theme

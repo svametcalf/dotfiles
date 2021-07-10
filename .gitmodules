@@ -10,3 +10,6 @@
 [submodule "zsh-autosuggestions"]
 	path = zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "dracula"]
+	path = dracula
+	url = git@github.com:dracula/zsh
