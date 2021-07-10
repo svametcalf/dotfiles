@@ -4,6 +4,8 @@
 
 - clean: ['~']
 
+- shell:
+    - [mkdir -p ~/.zsh/custom/plugins/zsh-autosuggestions, Creating zsh custom dir]
 - link:
     ~/.gitconfig: gitconfig
     ~/.zshrc: zshrc
